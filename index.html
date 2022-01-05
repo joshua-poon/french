@@ -11,17 +11,19 @@
 
 <body>
 
-  <h1>Josh Poon's French Index</h1>
+  <h1><a href='/french.html'>Josh Poon's French Index</a></h1>
 
   <h3>A complete guide to grammar and the most important vocabulary</h2>
 
     <h2>Visit my <a href="https://www.poonos.com">Personal website</a></h2>
 
-    <div>
-      <h2>Why learn French?</h2>
+    <button class="show-modal">Why learn French?</button>
 
 
-      <p>French is a good language to learn as a second language. Here are some syntactical reasons why:</p>
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1>Why learn French?</h1>
+      <p> French is a good language to learn as a second language. Here are some syntactical reasons why:</p>
       <ul>
         <li>It possesses many properties of foreign languages: conjugations, genders, stricter word order. You
           understand
@@ -42,16 +44,22 @@
       <ul>
         <li>Firstly, being able to see connections with the English language, its similarities, which is a method of
           memorising vocabulary which I will delve into.</li>
-        <li>how it has influenced the etymology of many English words, especially concepts such as words with different
+        <li>how it has influenced the etymology of many English words, especially concepts such as words with
+          different
           levels of prestige based on their Romantic roots</li>
 
       </ul>
 
       <p> Pronunciation of French words is a whole nother game. I'll also be looking into this, but I can't say that I
-        am knowledgeable in the evolution of the pronunciation of French words, from its roots within regional dialects
-        across France and as a form of 'corrupted' Latin, to modern French as determined by the Académie Française.</p>
-
+        am knowledgeable in the evolution of the pronunciation of French words, from its roots within regional
+        dialects
+        across France and as a form of 'corrupted' Latin, to modern French as determined by the Académie Française.
+      </p>
     </div>
+    <div class="overlay hidden"></div>
+
+    <br>
+    <p>Only Verbs is Active right now</p>
 
     <button class="show-modal" onclick="location.href='/french/verbs.html'" type="button">Verbs</button>
     <button class="show-modal" onclick="location.href='/french/adjectives.html'">Adjectives</button>
