@@ -1,8 +1,10 @@
 'use strict';
 
-const irrVerbConj = { 'être': ['suis', 'es', 'est', 'sommes', 'êtes', 'sont', 'été'], 'avoir': ['ai', 'as', 'a', 'avons', 'avez', 'ont', 'eu'], 'aller': ['vais', 'vas', 'va', 'allons', 'allez', 'vont', 'allé(e) (with être)'] }
+//verb irregular conjugations
 
-const pronounSelectors = ['.irr-je', '.irr-tu', '.irr-il', '.irr-nous', '.irr-vous', '.irr-ils', '.irr-pc']
+const irrVerbConj = { 'être': ['to be', 'suis', 'es', 'est', 'sommes', 'êtes', 'sont', 'été'], 'avoir': ['to have', 'ai', 'as', 'a', 'avons', 'avez', 'ont', 'eu'], 'aller': ['to go', 'vais', 'vas', 'va', 'allons', 'allez', 'vont', 'allé(e) (with être)'], 'faire': ['to do, make', 'fais', 'fais', 'fait', 'faisons', 'faites', 'font', 'fait'] }
+
+const pronounSelectors = ['.irr-eng', '.irr-je', '.irr-tu', '.irr-il', '.irr-nous', '.irr-vous', '.irr-ils', '.irr-pc']
 
 const irrVerbs = document.querySelectorAll('.irr-verbs')
 
@@ -11,7 +13,7 @@ for (let i = 0; i < irrVerbs.length; i++) {
         const currentWord = irrVerbs[i].textContent;
         const currentConjList = irrVerbConj[currentWord]
 
-        for (let j = 0; j < 7; j++)
+        for (let j = 0; j < 8; j++)
             document.querySelector(pronounSelectors[j]).textContent = currentConjList[j]
 
 
