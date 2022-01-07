@@ -13,7 +13,7 @@ for (let i = 0; i < irrVerbs.length; i++) {
         const currentWord = irrVerbs[i].textContent;
         const currentConjList = irrVerbConj[currentWord]
 
-        for (let j = 0; j < pronounSelectors.length; j++)
+        for (let j = 0; j < 8; j++)
             document.querySelector(pronounSelectors[j]).textContent = currentConjList[j]
 
 
